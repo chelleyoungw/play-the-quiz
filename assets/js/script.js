@@ -27,7 +27,12 @@ function startQuiz() {
         startTimer();
         questionContent.innerHTML = " ";
         document.body.removeChild(startButton);
+        Q1();
     });
+}
+
+function Q1() {
+    questionContent.textContent = "Who is your daddy and what does he do?";
 }
 
 startQuiz();

@@ -6,10 +6,11 @@ function startTimer() {
     var timerInterval = setInterval(function(){
         timeLeft--;
         timerHeader.textContent = "Time: " + timeLeft;
-        
+
         if(timeLeft === 0) {
         clearInterval(timerInterval);
         alert("GAME OVER");
+        
     }
     },1000);
 
@@ -24,6 +25,8 @@ function startQuiz() {
 
     startButton.addEventListener('click', function() {
         startTimer();
+        questionContent.innerHTML = " ";
+        document.body.removeChild(startButton);
     });
 }
 

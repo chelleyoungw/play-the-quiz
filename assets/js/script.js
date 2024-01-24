@@ -33,6 +33,23 @@ function startQuiz() {
 
 function Q1() {
     questionContent.textContent = "Who is your daddy and what does he do?";
+    
+    var b1 = document.createElement("button");
+    var b2 = document.createElement("button");
+    var b3 = document.createElement("button");
+    var b4 = document.createElement("button");
+
+    b1.textContent = "Pizza delivery driver";
+    b2.textContent = "Helicopter pilot";
+    b3.textContent = "Ballroom dancer";
+    b4.textContent = "Governor";
+
+
+    document.body.appendChild(b1);
+    document.body.appendChild(b2);
+    document.body.appendChild(b3);
+    document.body.appendChild(b4);
+    Q2();
 }
 
 startQuiz();

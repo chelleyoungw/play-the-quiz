@@ -72,9 +72,48 @@ function Q1() {
     b1. addEventListener('click', function() {
         if(true) {
             questionContent.innerHTML = " ";
+                b1.textContent = "Do you want to lose a kidney?";
+                b2.textContent = "H-to-the-NO";
+                b3.textContent = "Yes, follow the Liopleurodon!";
+                b4.textContent = "Maybe";
+        }
+    Q2();
+    })
+    
+}
+function Q2() {
+    questionContent.textContent = "Do you want to go to Candy Mountain?";
+
+    var b1 = document.createElement("button");
+    var b2 = document.createElement("button");
+    var b3 = document.createElement("button");
+    var b4 = document.createElement("button");
+
+    b1 === true;
+    b2 === false;
+    b3 === false;
+    b4 === false;
+
+    b2.addEventListener('click', function() {
+        if(false); {
+            timeLeft = timeLeft - 5;
         }
     })
-    Q2();
+    b3.addEventListener('click', function() {
+        if(false); {
+            timeLeft = timeLeft - 5;
+        }
+    })
+    b4.addEventListener('click', function() {
+        if(false); {
+            timeLeft = timeLeft - 5;
+        }
+    })
+    b1. addEventListener('click', function() {
+        if(true) {
+            questionContent.innerHTML = " ";
+        }
+    })
+    // Q2();
 }
-
 startQuiz();

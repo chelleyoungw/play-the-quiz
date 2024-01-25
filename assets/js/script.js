@@ -69,8 +69,12 @@ function Q1() {
             timeLeft = timeLeft - 5;
         }
     })
-
-    // Q2();
+    b1. addEventListener('click', function() {
+        if(true) {
+            questionContent.innerHTML = " ";
+        }
+    })
+    Q2();
 }
 
 startQuiz();

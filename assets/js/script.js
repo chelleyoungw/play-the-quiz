@@ -1,6 +1,6 @@
 var timerHeader = document.getElementById("time")
 var questionContent = document.getElementById("main");
-var timeLeft = 5;
+var timeLeft = 30;
 
 function startTimer() {
     var timerInterval = setInterval(function(){
@@ -44,12 +44,33 @@ function Q1() {
     b3.textContent = "Ballroom dancer";
     b4.textContent = "Governor";
 
-
     document.body.appendChild(b1);
     document.body.appendChild(b2);
     document.body.appendChild(b3);
     document.body.appendChild(b4);
-    Q2();
+
+    b1 === true;
+    b2 === false;
+    b3 === false;
+    b4 === false;
+
+    b2.addEventListener('click', function() {
+        if(false); {
+            timeLeft = timeLeft - 5;
+        }
+    })
+    b3.addEventListener('click', function() {
+        if(false); {
+            timeLeft = timeLeft - 5;
+        }
+    })
+    b4.addEventListener('click', function() {
+        if(false); {
+            timeLeft = timeLeft - 5;
+        }
+    })
+
+    // Q2();
 }
 
 startQuiz();

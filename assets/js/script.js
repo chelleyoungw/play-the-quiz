@@ -109,11 +109,11 @@ function Q2() {
             timeLeft = timeLeft - 5;
         }
     })
-    b1. addEventListener('click', function() {
-        if(true) {
-            questionContent.innerHTML = " ";
+    b1.addEventListener('click', function() {
+        if(true); {
+            clearInterval(timerInterval);
+            alert("GAME OVER");
         }
     })
-    // Q2();
 }
 startQuiz();
